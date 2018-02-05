@@ -42,7 +42,6 @@ public class ObserverTest {
     @After
     public void restoreStreams() {
         System.setOut(System.out);
-        System.setErr(System.err);
     }
 
 }
