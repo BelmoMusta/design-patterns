@@ -1,4 +1,4 @@
-package musta.belmo.designpatterns.factory;
+package musta.belmo.designpatterns.factorymethod;
 
 public class HerbivoreCage implements Cage {
     @Override

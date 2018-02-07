@@ -1,4 +1,4 @@
-package musta.belmo.designpatterns.factory;
+package musta.belmo.designpatterns.factorymethod;
 
 public interface Cage {
     Animal getAnimal();
