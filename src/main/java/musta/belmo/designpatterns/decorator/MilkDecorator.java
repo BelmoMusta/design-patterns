@@ -4,6 +4,9 @@ package musta.belmo.designpatterns.decorator;
  * Decorate the actual coffee by adding milk into it.
  */
 public class MilkDecorator extends CoffeeDecorator {
+
+    private static final int MILK_PRICE = 2;
+
     public MilkDecorator(Coffee pCoffee) {
         super(pCoffee);
     }
@@ -13,7 +16,7 @@ public class MilkDecorator extends CoffeeDecorator {
      */
     @Override
     public String getIngredients() {
-        return mCoffee.getIngredients() + " and milk";
+        return super.getIngredients() + " and milk";
     }
 
     /**
@@ -21,6 +24,6 @@ public class MilkDecorator extends CoffeeDecorator {
      */
     @Override
     public int getPrice() {
-        return mCoffee.getPrice() + 2;
+        return super.getPrice() + MILK_PRICE;
     }
 }

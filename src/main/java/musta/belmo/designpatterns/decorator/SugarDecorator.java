@@ -4,8 +4,10 @@ package musta.belmo.designpatterns.decorator;
  * Decorate the actual coffee by adding sugar into it.
  */
 public class SugarDecorator extends CoffeeDecorator {
-    public SugarDecorator(Coffee pCoffee) {
 
+    private static final int SUGAR_PRICE = 1;
+
+    public SugarDecorator(Coffee pCoffee) {
         super(pCoffee);
     }
 
@@ -14,7 +16,7 @@ public class SugarDecorator extends CoffeeDecorator {
      */
     @Override
     public String getIngredients() {
-        return mCoffee.getIngredients() + " and sugar";
+        return super.getIngredients() + " and sugar";
     }
 
     /**
@@ -22,6 +24,6 @@ public class SugarDecorator extends CoffeeDecorator {
      */
     @Override
     public int getPrice() {
-        return mCoffee.getPrice() + 1;
+        return super.getPrice() + SUGAR_PRICE;
     }
 }

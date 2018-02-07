@@ -6,5 +6,4 @@ package musta.belmo.designpatterns.decorator;
  */
 public class EmptyCoffee implements Coffee {
 
-
 }

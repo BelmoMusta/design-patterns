@@ -1,7 +1,7 @@
 package musta.belmo.designpatterns.decorator;
 
 public abstract class CoffeeDecorator implements Coffee {
-    protected Coffee mCoffee;
+    private Coffee mCoffee;
 
     /**
      * Constructor of the CoffeeDecorator class.

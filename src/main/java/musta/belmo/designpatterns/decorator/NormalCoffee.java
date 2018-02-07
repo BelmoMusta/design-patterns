@@ -4,6 +4,9 @@ package musta.belmo.designpatterns.decorator;
  * a normal coffee without any other ingredients.
  */
 public class NormalCoffee implements Coffee {
+
+    private static final int NORMAL_PRICE = 2;
+
     /**
      * {@inheritDoc}
      */
@@ -17,6 +20,6 @@ public class NormalCoffee implements Coffee {
      */
     @Override
     public int getPrice() {
-        return 2;
+        return NORMAL_PRICE;
     }
 }
